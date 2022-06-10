@@ -1,0 +1,8 @@
+/* para single */
+.img-fluid {
+  width: 30rem;
+}
+
+.col-md-4 {
+  display: flex;
+}

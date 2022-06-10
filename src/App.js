@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import CharCards from "./Views/CharCards";
+import EpiCards from "./Views/EpiCards";
+import Footer from "./Components/Footer";
+import injectContext from "./Store/appContext";
+import CharSingle from "./Components/CharSingle";
+import EpiSingle from "./Views/EpiSingle"; //Arreglar
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          {/* Hacerle un home aqui */}
+          <Route path="/characters" element={<CharCards />} />
+          <Route path="/characters/:id" element={<CharSingle />} />
+
+          <Route path="/episode" element={<EpiCards />} />
+          <Route path="/episode/:id" element={<EpiSingle />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default injectContext(App);

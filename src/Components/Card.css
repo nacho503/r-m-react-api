@@ -1,0 +1,46 @@
+/* Generales */
+.card {
+  margin: 25px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.4s;
+  padding: 0%;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.btn-container {
+  display: block;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+}
+
+li {
+  list-style: none;
+}
+
+/* Especificos de characters */
+.card-char-text {
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-char-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-char-attribute {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

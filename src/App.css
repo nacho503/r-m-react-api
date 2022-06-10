@@ -1,6 +1,13 @@
 .App {
   text-align: center;
+  background-color: rgb(64, 123, 224);
 }
+
+/* body {
+  background-image: url("./img/rmBG_1920x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vp;
+} */
 
 .App-logo {
   height: 40vmin;

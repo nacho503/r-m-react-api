@@ -1,0 +1,14 @@
+.navbar-rickandmorty {
+  background-color: #43bb73;
+  padding: 0 !important;
+  font-weight: 700;
+  box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  padding: 0 !important;
+}
+
+.navbar .navbar-brand img {
+  height: 100px;
+}
