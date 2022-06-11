@@ -6,8 +6,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 let CharSingleView = (props) => {
-  let episodes = props.episodes;
-
   return (
     <div className="card mb-3">
       <div className="row g-0">
@@ -29,12 +27,14 @@ let CharSingleView = (props) => {
               <li>Status: {props.status}</li>
               {props.type === "" ? "" : <li>Type: {props.type}</li>}
               <li>Gender: {props.gender}</li>
-              <ul>
-                {/* Episodes:
-                  {episodes.map((episode) => (
-                    <li>{episode.slice(-2)}</li>
-                  ))} */}
-              </ul>
+              {/* <span>Episodes: </span>
+              <ul class="list-group list-group-horizontal">
+                {props.episodes.map((episode) => (
+                  <li class="list-group-item">
+                    {episode.length == 41 ? episode[40] : episode.slice(40, 43)}
+                  </li>
+                ))}
+              </ul> */}
             </ul>
           </div>
         </div>

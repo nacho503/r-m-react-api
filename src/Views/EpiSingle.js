@@ -27,10 +27,7 @@ const CharSingle = () => {
         <img src={rickandmortcouch} className="card-img" alt="..." />
         <div className="card-img-overlay">
           <h5 className="card-title">{episodes.name}</h5>
-          <p className="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
+          <p className="card-text">EN CONSTRUCCION</p>
           <ul>
             {/* <li>{episodes.characters[0]}</li>
             <li>{episodes.characters[1]}</li>
