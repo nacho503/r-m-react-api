@@ -63,22 +63,5 @@ def all_users():
     return jsonify(favorites),200 
 
 
-# @app.route('/put_favorite',methods=['PUT'])
-# def put_user(id):
-#     favorite=Favorite.query.get(id)
-#     favorite.password = request.json.get("password")
-#     favorite.password = request.json.get("name")
-#     db.session.add(favorite)
-#     db.session.commit()
-#     return jsonify(favorite.serialize()),200 
-
-
-# @app.route('/delete_user/<int:id>', methods=['DELETE'])
-# def delete_user(id):
-#     favorite=User.query.get(id)
-#     db.session.delete(user)
-#     db.session.commit()
-#     return jsonify('Borrado'),200
-
 if __name__ == "__main__":
     app.run(host="localhost", port=8080)
