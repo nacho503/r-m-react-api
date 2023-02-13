@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/r-m-react-api.git/static/css/main.f5bbb7fc.css",
-    "main.js": "/r-m-react-api.git/static/js/main.d9714abb.js",
-    "static/js/787.1e566528.chunk.js": "/r-m-react-api.git/static/js/787.1e566528.chunk.js",
-    "static/media/rickandmortyLogo.png": "/r-m-react-api.git/static/media/rickandmortyLogo.23a3f17c4910e9c2a99a.png",
-    "static/media/rick&mortyimg.jpg": "/r-m-react-api.git/static/media/rick&mortyimg.3db32807b1f8becaffbb.jpg",
-    "index.html": "/r-m-react-api.git/index.html",
-    "main.f5bbb7fc.css.map": "/r-m-react-api.git/static/css/main.f5bbb7fc.css.map",
-    "main.d9714abb.js.map": "/r-m-react-api.git/static/js/main.d9714abb.js.map",
-    "787.1e566528.chunk.js.map": "/r-m-react-api.git/static/js/787.1e566528.chunk.js.map"
+    "main.css": "/r-m-react-api/static/css/main.f5bbb7fc.css",
+    "main.js": "/r-m-react-api/static/js/main.1c9fb7ab.js",
+    "static/js/787.1e566528.chunk.js": "/r-m-react-api/static/js/787.1e566528.chunk.js",
+    "static/media/rickandmortyLogo.png": "/r-m-react-api/static/media/rickandmortyLogo.23a3f17c4910e9c2a99a.png",
+    "static/media/rick&mortyimg.jpg": "/r-m-react-api/static/media/rick&mortyimg.3db32807b1f8becaffbb.jpg",
+    "index.html": "/r-m-react-api/index.html",
+    "main.f5bbb7fc.css.map": "/r-m-react-api/static/css/main.f5bbb7fc.css.map",
+    "main.1c9fb7ab.js.map": "/r-m-react-api/static/js/main.1c9fb7ab.js.map",
+    "787.1e566528.chunk.js.map": "/r-m-react-api/static/js/787.1e566528.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5bbb7fc.css",
-    "static/js/main.d9714abb.js"
+    "static/js/main.1c9fb7ab.js"
   ]
 }
