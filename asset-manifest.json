@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/r-m-react-api/static/css/main.f5bbb7fc.css",
-    "main.js": "/r-m-react-api/static/js/main.1c9fb7ab.js",
+    "main.css": "/r-m-react-api/static/css/main.77460635.css",
+    "main.js": "/r-m-react-api/static/js/main.ddae338f.js",
     "static/js/787.1e566528.chunk.js": "/r-m-react-api/static/js/787.1e566528.chunk.js",
     "static/media/rickandmortyLogo.png": "/r-m-react-api/static/media/rickandmortyLogo.23a3f17c4910e9c2a99a.png",
     "static/media/rick&mortyimg.jpg": "/r-m-react-api/static/media/rick&mortyimg.3db32807b1f8becaffbb.jpg",
     "index.html": "/r-m-react-api/index.html",
-    "main.f5bbb7fc.css.map": "/r-m-react-api/static/css/main.f5bbb7fc.css.map",
-    "main.1c9fb7ab.js.map": "/r-m-react-api/static/js/main.1c9fb7ab.js.map",
+    "main.77460635.css.map": "/r-m-react-api/static/css/main.77460635.css.map",
+    "main.ddae338f.js.map": "/r-m-react-api/static/js/main.ddae338f.js.map",
     "787.1e566528.chunk.js.map": "/r-m-react-api/static/js/787.1e566528.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5bbb7fc.css",
-    "static/js/main.1c9fb7ab.js"
+    "static/css/main.77460635.css",
+    "static/js/main.ddae338f.js"
   ]
 }
