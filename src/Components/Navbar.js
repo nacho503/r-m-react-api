@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Context
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Context } from "../Store/appContext";
 
 //
