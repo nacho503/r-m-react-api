@@ -12,3 +12,8 @@
 .navbar .navbar-brand img {
   height: 100px;
 }
+
+.navbar-toggler-container {
+  background-color: rgba(26, 113, 68, 0.321);
+  border-radius: 10px;
+}
