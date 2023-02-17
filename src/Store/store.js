@@ -1,5 +1,5 @@
 let urlEpisodes = "https://rickandmortyapi.com/api/episode";
-let urlCharacters = "https://rickandmortyapi.com/api/character";
+let urlCharacters = "https://rickandmortyapi.com/api/character/";
 
 const getState = ({ setStore, getActions, getStore }) => {
   return {
@@ -10,9 +10,11 @@ const getState = ({ setStore, getActions, getStore }) => {
     },
     actions: {
       getCharacters: () => {
-        fetch(urlCharacters)
+        let store = getStore();
+        fetch(urlCharacters + "?page=1")
           .then((res) => res.json())
           .then((charData) => setStore({ characters: charData.results }));
+        console.log(store.characters);
       },
 
       getEpisodes: () => {

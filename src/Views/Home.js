@@ -5,20 +5,41 @@ let Home = () => {
   return (
     <div className="home-container d-flex flex-column justify-content-center align-items-center mt-5 ">
       <h1>Welcome</h1>
-      <p>This exercise was done with the goal to show basic command of:</p>
+      <p>
+        <strong>
+          This exercise was done with the goal to show basic command of React
+          with:
+        </strong>
+      </p>
+
       <ul>
-        <li>Router</li>
-        <li>Bootstrap</li>
-        <li>fetch API</li>
-        <li>App Context with Flux</li>
-        <li>Hooks: useState - useEffect</li>
+        <li>
+          {" "}
+          <strong>Router</strong>
+        </li>
+        <li>
+          <strong>Bootstrap</strong>
+        </li>
+        <li>
+          <strong>fetch API</strong>
+        </li>
+        <li>
+          <strong>App Context with Flux</strong>
+        </li>
+        <li>
+          <strong>Hooks: useState - useEffect</strong>
+        </li>
       </ul>
       <h1 className="mt-5">Instructions:</h1>
       <p>
-        Click on characters or episodes, and get the cards displayed with the
-        data of the API from the famous Rick&Morty TV-Show
+        <strong>
+          Click on characters or episodes, and get the cards displayed with the
+          data from the API from the famous Rick&Morty TV-Show
+        </strong>
       </p>
-      <p>You can try on mobile!</p>
+      <strong>
+        <p>You can try on mobile!</p>
+      </strong>
     </div>
   );
 };

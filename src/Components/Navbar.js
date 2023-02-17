@@ -28,7 +28,7 @@ let Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-rickandmorty sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={rickandmortyLogo}></img>
           </a>
           <div className="navbar-toggler-container">
