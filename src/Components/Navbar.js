@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Context
 import { useContext } from "react";
 import { Context } from "../Store/appContext";
-import { useNavigate } from "react-router-dom";
 
 //
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -16,7 +15,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 let Navbar = () => {
-  const navigate = useNavigate();
   const { actions, store } = useContext(Context);
 
   const deleteFavHandler = (i) => {
@@ -26,17 +24,15 @@ let Navbar = () => {
     actions.deleteFavorite(arregloFiltrado);
   };
 
-  const handleClick = () => {
-    navigate("/");
-  };
-
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-rickandmorty sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" onClick={handleClick} href="#">
-            <img src={rickandmortyLogo}></img>
-          </a>
+          <Link to="/home">
+            <a className="navbar-brand" href="#">
+              <img src={rickandmortyLogo}></img>
+            </a>
+          </Link>
           <div className="navbar-toggler-container">
             <button
               className="navbar-toggler"
