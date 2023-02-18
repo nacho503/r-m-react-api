@@ -7,6 +7,7 @@ const getState = ({ setStore, getActions, getStore }) => {
       characters: [],
       episodes: [],
       favorites: [],
+      renderPagination: false,
     },
     actions: {
       getCharacters: () => {
@@ -32,6 +33,17 @@ const getState = ({ setStore, getActions, getStore }) => {
         setStore({
           favorites: newFavorites,
         });
+      },
+      renderPaginationAct: () => {
+        // const store = getStore();
+        if (
+          window.location.pathname.includes("/home") ||
+          window.location.pathname.includes("/r-m-react-api")
+        ) {
+          setStore({ renderPagination: false });
+        } else {
+          setStore({ renderPagination: true });
+        }
       },
     },
   };
