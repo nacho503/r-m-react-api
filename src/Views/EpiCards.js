@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import EpiCard from "../Components/EpiCard";
 
 //Context

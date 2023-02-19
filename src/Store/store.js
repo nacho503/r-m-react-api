@@ -1,4 +1,4 @@
-let urlEpisodes = "https://rickandmortyapi.com/api/episode";
+let urlEpisodes = "https://rickandmortyapi.com/api/episode/?page=";
 let urlCharacters = "https://rickandmortyapi.com/api/character/?page=";
 
 const getState = ({ setStore, getActions, getStore }) => {
@@ -8,18 +8,25 @@ const getState = ({ setStore, getActions, getStore }) => {
       episodes: [],
       favorites: [],
       renderPagination: false,
-      currentPageDisplay: [1, 2, 3],
+      currentPageDisplay: 1,
     },
     actions: {
       getCharacters: () => {
         let store = getStore();
-        fetch(urlCharacters + store.currentPage)
+        if (store.currentPageDisplay > 42) {
+          setStore({ currentPageDisplay: 42 });
+        }
+        fetch(urlCharacters + store.currentPageDisplay)
           .then((res) => res.json())
           .then((charData) => setStore({ characters: charData.results }));
       },
 
       getEpisodes: () => {
-        fetch(urlEpisodes)
+        let store = getStore();
+        if (store.currentPageDisplay > 3) {
+          setStore({ currentPageDisplay: 3 });
+        }
+        fetch(urlEpisodes + store.currentPageDisplay)
           .then((res) => res.json())
           .then((epiData) => setStore({ episodes: epiData.results }));
       },
@@ -44,14 +51,13 @@ const getState = ({ setStore, getActions, getStore }) => {
           setStore({ renderPagination: true });
         }
       },
-      incrementCurrPage: () => {
-        const store = getStore();
-        let nextPageDisp = [...store.currentPageDisplay].map(
-          (pageN) => pageN + 1
-        );
-
-        // setStore({ currentPage: nextPageDisp });
-        console.log(nextPageDisp);
+      changeCurrPage: (page) => {
+        let actions = getActions();
+        setStore({
+          currentPageDisplay: page,
+        });
+        actions.getCharacters();
+        actions.getEpisodes();
       },
     },
   };
