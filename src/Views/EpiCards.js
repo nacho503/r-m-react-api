@@ -11,6 +11,7 @@ let EpiCards = () => {
 
   useEffect(() => {
     actions.getEpisodes();
+    actions.renderPaginationAct();
   }, []);
 
   return (

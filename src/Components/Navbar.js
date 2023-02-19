@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Context
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../Store/appContext";
 
 //
@@ -24,13 +24,17 @@ let Navbar = () => {
     actions.deleteFavorite(arregloFiltrado);
   };
 
+  const setActiveTab = () => {
+    actions.renderPaginationAct();
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-rickandmorty sticky-top">
         <div className="container-fluid">
           <Link to="/home">
             <a className="navbar-brand" href="#">
-              <img src={rickandmortyLogo}></img>
+              <img src={rickandmortyLogo} alt="Logo"></img>
             </a>
           </Link>
           <div className="navbar-toggler-container">
@@ -49,8 +53,12 @@ let Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/characters" className="nav-link active">
+              <li className="nav-item" onClick={setActiveTab}>
+                <Link
+                  to="/characters"
+                  className="nav-link active"
+                  onClick={setActiveTab}
+                >
                   Characters
                 </Link>
               </li>

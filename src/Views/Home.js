@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import "bootstrap/dist/css/bootstrap.css";
+import { useContext } from "react";
+import { Context } from "../Store/appContext";
 
 let Home = () => {
+  const { actions, store } = useContext(Context);
+  useEffect(() => {
+    actions.renderPaginationAct();
+  }, []);
+
   return (
     <div className="home-container d-flex flex-column justify-content-center align-items-center mt-5 ">
       <h1>Welcome</h1>
