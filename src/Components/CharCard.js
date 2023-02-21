@@ -11,13 +11,12 @@ import { useContext } from "react";
 import { Context } from "../Store/appContext";
 
 let Card = (props) => {
-  const { actions, store } = useContext(Context);
+  const { actions } = useContext(Context);
   const favoriteClickHandler = (e) => {
     e.stopPropagation();
     e.preventDefault();
 
     actions.addFavorite(`Character: ${props.name}`);
-    console.log(store.favorites);
   };
 
   const handleGoToCharacter = (e) => {

@@ -9,12 +9,12 @@ import { useContext } from "react";
 import { Context } from "../Store/appContext";
 
 let EpiCard = (props) => {
-  const { actions, store } = useContext(Context);
+  const { actions } = useContext(Context);
   const favoriteClickHandler = (e) => {
+    e.stopPropagation();
     e.preventDefault();
-    console.log(props.name);
+
     actions.addFavorite(`Episode: ${props.name}`);
-    console.log(store.favorites);
   };
 
   const handleGoToEpisode = (e) => {

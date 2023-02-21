@@ -4,15 +4,14 @@ import "./CharCard.css";
 import rickandmortcouch from "../img/rick&mortyimg.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //Context
-import { useContext } from "react";
-import { Context } from "../Store/appContext";
+// import { useContext } from "react";
+// import { Context } from "../Store/appContext";
 
 const CharSingle = () => {
   let [episodes, setEpisode] = useState("");
-  const { actions, store } = useContext(Context);
+  // const { actions, store } = useContext(Context);
   const params = useParams();
 
   useEffect(() => {
