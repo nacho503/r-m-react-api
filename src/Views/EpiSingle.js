@@ -5,13 +5,8 @@ import rickandmortcouch from "../img/rick&mortyimg.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-//Context
-// import { useContext } from "react";
-// import { Context } from "../Store/appContext";
-
 const CharSingle = () => {
   let [episodes, setEpisode] = useState("");
-  // const { actions, store } = useContext(Context);
   const params = useParams();
 
   useEffect(() => {
@@ -26,13 +21,7 @@ const CharSingle = () => {
         <img src={rickandmortcouch} className="card-img" alt="..." />
         <div className="card-img-overlay">
           <h5 className="card-title">{episodes.name}</h5>
-          <p className="card-text">EN CONSTRUCCION</p>
-          <ul>
-            {/* <li>{episodes.characters[0]}</li>
-            <li>{episodes.characters[1]}</li>
-            <li>{episodes.characters[2]}</li>
-            <li>{episodes.characters[3]}</li> */}
-          </ul>
+          <p className="card-text">Under construction</p>
         </div>
       </div>
     </div>
