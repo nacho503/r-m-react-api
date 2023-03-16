@@ -28,7 +28,7 @@ let EpiCard = (props) => {
       <div
         className="card"
         style={{ width: "18rem" }}
-        onClick={(e) => handleGoToEpisode(e)}
+        // onClick={(e) => handleGoToEpisode(e)}
       >
         <div className="card-body">
           <h5 className="card-title">

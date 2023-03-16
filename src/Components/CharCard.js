@@ -30,7 +30,7 @@ let Card = (props) => {
       <div
         className="card"
         style={{ width: "18rem" }}
-        onClick={(e) => handleGoToCharacter(e)}
+        // onClick={(e) => handleGoToCharacter(e)}
       >
         <img src={props.image} className="card-img-top" alt="..." />
         <div className="card-body">
